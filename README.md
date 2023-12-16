@@ -2,6 +2,12 @@
 Overview
 This is a car-pooling platform implemented in Go with a microservices architecture. The platform allows users to register, publish car-pooling trips, and search for available trips.
 
+### Architecture
+This program has two microservices, and the main.go (Main microservice) acts as the 'front-end' of the program, and calls upon the database.go (Secondary microservice) for insertion, updating, or deletion of records in the database itself. 
+
+### Set up for microservices
+To set up the microservice, you are to first run database.go, and ensure that it is listening to port 8000. Afterwards, run main.go to use the platform itself.
+
 ### Features
 #### User Management:
 
